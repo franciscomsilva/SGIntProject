@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LaRedoute Web Interface</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+	    // Important for windows phone 8
+	    if (navigator.userAgent.match(/IEMobile\/10\.0/))
+	    {
+	        var msViewportStyle = document.createElement("style");
+	        msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+	        document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+	    }
+	</script>
+</head>
+
+<body>
+	<div id="top">
+		<div id="topBar">
+			<div class="container" id="help-container">
+				<div class="btn-top" id="btnHelp"> <i class="fas fa-question-circle"></i>
+				</div>
+				<div class="top-title" id="helpTitle">
+					<h2 id="headingHelp">Precisa de ajuda?</h2>
+				</div>
+				<div class="top-body" id="helpBody">
+					<p id="helpText">-Use as setas para movimentar e rodar a peça de roupa. <br><br>
+					-Pode usar o seu rato para mover livremente a peça!<br>
+					-Botões do canto inferior esquerdo da direita para a esquerda: --1ºBotão: Altera a cor do fundo;<br><br>  --2ºBotão:Permite alterar a iluminação sobre a peça de roupa;<br><br> --3ºBotão: Altera a cor da peça;<br><br> --4ºBotão: Inicia uma pequena animação da peça.</p>
+				</div>
+			</div>
+			<div class="container" id="information-container">
+					<div class="btn-top" id="btnInformation"> <i class="fas fa-info-circle"></i>
+					</div>
+					<div class="top-title" id="infoTitle">
+						<h2 id="headingInfo">Informações</h2>
+					</div>
+					<div class="top-body" id="infoBody">
+						<p id="infoText">-Esta interface Web permite que possa visualizar modelos de roupa 3D em diversas condições! <br><br>-Este website foi desenvolvido no âmbito da cadeira de Sistemas Gráficos e Interação da ESTG. <br><br>
+						-Projeto desenvolvido pelos alunos de 2ºano Ricardo Saramago e Francisco Silva. </p>
+					</div>
+			</div>
+			<button class="btn" id="btnCasaco">
+				Casaco
+			</button>
+			<button class="btn" id="btnSaia">
+				Saia
+			</button>
+		</div>
+	</div>
+
+ 	<div id="canvas"> <canvas id="meuCanvas"></canvas></div>
+
+
+    <script src="js/three.js"></script>
+
+    <script src="js/OrbitControls.js"></script>
+
+    <script src="js/GLTFLoader.js"></script>
+
+    <script src="main.js"></script>
+    <div id="bottom">
+    	<div id="buttons">
+			<button autofocus="autofocus" class="btn" id="btnAnimation" title="Animate Piece of Cloth"><i class="fas fa-person-booth"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnModelColor" title="Change Cloth Color"><i class="fas fa-palette"></i> </button>
+			<button autofocus="autofocus" class="btn" id="btnLight" title="Change Ligh Source"><i class="far fa-lightbulb"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnBackground" title="Change Background"><i class="far fa-image"></i></button>
+		</div>
+		<div id="controller">
+			<button autofocus="autofocus" class="btn" id="btnLeft" title="Left"><i class="fas fa-arrow-left"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnUp" title="Up"><i class="fas fa-arrow-up"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnDown" title="Down"><i class="fas fa-arrow-down"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnRight" title="Right"><i class="fas fa-arrow-right"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnRotateRight" title="Rotate Right"><i class="fas fa-undo" data-fa-transform="rotate-180"></i></button>
+			<button autofocus="autofocus" class="btn" id="btnRotateLeft" title="Rotate Left"><i class="fas fa-undo"></i></button>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+body {
+	background-color: #6495ED;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	margin: 0px 0px 0px 0px;
+}
+
+.btn {
+	border: 3px solid #FCAD26;
+	border-radius: 50px;
+	color: #FCAD26;
+	background-color: #FFF;
+	padding: : 15px 35px;
+	margin: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 30px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.btn:hover {
+	background-color: #FCAD26;
+	color: #FFF;
+}
+
+#bottom {
+
+	height: 50px;
+	width: 1150px;
+	bottom: 0%;
+	left: 10px;
+	float: bottom;
+	position: absolute;
+}
+
+#buttons {
+	border-radius: 50px;
+	text-align: center;
+	border-color: black;
+	background-color: #FFF;
+	float: left;
+	width: 300px;
+}
+
+#controller {
+	border-radius: 50px;
+	text-align: center;
+	border-color: black;
+	background-color: #FFF;
+	float: right;
+	left: 40px;
+}
+
+#btnCasaco{
+	top:5px;
+	float:center;
+	left:50%;
+	position: absolute;
+	font-size: 20px;
+	font-weight: normal;
+	width: 80px;
+}
+
+#btnSaia{
+	top:5px;
+	float:center;
+	left:55.5%;
+	position: absolute;
+	font-size: 20px;
+	font-weight: normal;
+	width: 80px
+}
+
+
+#btnRotateLeft {
+	transform: rotateY(180deg);
+}
+
+#top{
+	position: relative;
+}
+
+#topBar{
+	height: 40px;
+	width: 100%;
+
+}
+
+div#canvas{
+
+}
+
+.btn-top{
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
+	margin-top: 5px;
+	text-align: center;
+	margin-right: 0px;
+	border-radius: 50px;
+	border-color:#000;
+	border-width: 2px;
+	color: #fff;
+	background-color: #6495ED;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 7px;
+	cursor: pointer;
+	transition: all 0.1s;
+	font-family: Verdana;
+	position: relative;
+}
+
+.btn-top:hover {
+	background-color: #fff;
+	border-width: 2px;
+	border-color: #000;
+	color: #6495ED;
+}
+
+#btnInformation{
+	float: left;
+	position: absolute;
+	left: 0px;
+}
+
+.container{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+}
+
+#help-container{
+	top: 0px;
+	left: 20px;
+	z-index: 10;
+}
+
+#information-container{
+	top: 0px;
+	left: 100px;
+	z-index: 10;
+}
+
+#btnHelp{
+	float: left;
+	position: absolute;
+}
+
+.top-title{
+	width: 0px;
+	height: 50px;
+	background:#FCAD26;
+	position: absolute;
+	top: 0;
+	left: 70px;
+	border-radius: 0 25px 0 0;
+}
+
+.top-title h2{
+	margin: 0;
+	padding: 0;
+	color: white;
+	padding: 12px 35px;
+	font-size: 20px;
+	display:none;
+	font-family: Verdana;
+}
+
+.top-body{
+	width: 270px;
+	height: 0px;
+	background: white;
+	position: absolute;;
+	top: 50px;
+	left: 70px;
+	text-align: justify;
+	border-radius: 0 0 25px 25px;
+}
+
+.top-body p{
+	font-family: Arial;
+	margin:0;
+	padding: 0;
+	color: black;
+	font-size: 13px;
+	display:none;
+	padding: 12px 35px;
+}
+
+@keyframes fadein-right{
+	0% { opacity: :0; margin-left: 45px; }
+	100% {opacity: 1; margin-left: 0; }
+}
+
+@keyframes fadein-bottom{
+	0% { opacity: :0; margin-top: 45px; }
+	100% {opacity: 1; margin-top: 0; }
+}
+
+@keyframes fadeout-right {
+	0% {opacity: 1; margin-left: 0;}
+	100% {opacity: 0; margin-left: 45px;}
+}
+
+@keyframes fadeout-bottom{
+	0% {opacity: 1; margin-top: 0;}
+	100% {opacity: 0; margin-top: 45px;}
+}
+
+
+
+
+@-webkit-viewport { width: device-width; }
+	    @-moz-viewport { width: device-width; }
+	    @-ms-viewport { width: device-width; }
+	    @-o-viewport { width: device-width; }
+	    @viewport { width: device-width; }
+
+
